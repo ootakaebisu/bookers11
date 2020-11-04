@@ -1,0 +1,10 @@
+<% if model.errors.any? %>
+  <div id="error_explanation" class="alert alert-danger">
+    <ul>
+      <p><%= model.errors.count %>errors prohibited this book from being saved:</p>
+      <% model.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>

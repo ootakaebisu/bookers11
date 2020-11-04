@@ -1,0 +1,19 @@
+<h2>New book</h2>
+<%= form_for(book) do |f| %>
+<%= render 'layouts/error_message', model: @book %>
+
+  <div class="row field">
+    <label>Title</label><br>
+    <%= f.text_field :title, class: "col-xs-12" %>
+  </div>
+
+  <div class="row field">
+    <label>Opinion</label><br>
+    <%= f.text_area :body, class: "col-xs-12" %>
+  </div>
+
+  <div class="row field">
+    <%= f.submit 'Create Book', class: "col-xs-12 btn btn-primary" %>
+  </div>
+
+<% end %>

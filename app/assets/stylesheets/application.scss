@@ -13,3 +13,15 @@
  *= require_tree .
  *= require_self
  */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+.field {
+  margin-bottom: 10px;
+}
+
+nav > span {
+  color: #fff;
+  font-size: 20px;
+}
